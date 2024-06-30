@@ -1,0 +1,137 @@
+body {
+  font-family: pretendard;
+  height: 100vh; /* 화면 높이 만큼 설정 */
+  background-image: url(assets/land.png);
+  background-size: 100% auto;
+  background-color: #f1aed7;
+  background-position: center top; 
+            background-attachment: fixed; /* 이미지를 고정 */
+            /* background-position-y: calc(100% + 50px); 하단에서 50px 아래로 내림 */
+            overflow-y: hidden;
+            display: flex;
+            flex-direction: column;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inline {
+  display: inline flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.hidden {
+  display: none;
+}
+input {
+  border: none;
+  border-bottom: solid #aaaaaa 1px;
+  padding: 4px;
+}
+
+input::placeholder {
+  color: #aaaaaa;
+}
+input:focus {
+  outline: none;
+}
+
+.todo-item{
+    font-weight: 500;
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+button{
+    padding: 8px;
+    border: solid #aaaaaa 1px;
+    border-radius: 8px;
+    font-size: medium;
+    background-color: whitesmoke;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #ffce73;
+}
+.closeBtn{
+    width: 20px;
+}
+
+input[type="checkbox"]{
+    border: none;
+}
+.doneTime{
+    font-size: small;
+    color: #888;
+    margin-left: 26px;
+}
+
+div.main{
+  display: inline flex;
+  width: 100%;
+}
+div.column{
+    flex:1;
+    padding: 20px;
+}
+
+.scroll{
+    height: 36vh;
+    overflow: auto;
+    padding-right: 15px;
+    padding-bottom: 10px;
+}
+
+.lottie{
+    z-index: -1;
+    position: relative;
+    top: -50px;
+    margin:-36px;
+    
+}
+
+#main-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#todoForm{
+    font-size: large;
+    font-weight: 600;
+    padding: 20px;
+    border: solid br;
+    flex: 2;
+}
+
+#todoForm input{
+    font-size: medium;
+}
+
+.top {
+    display: inline flex;
+    align-items: center;
+    gap: 4px;
+    background-color: #ffdc9c;
+    border-radius: 20px;
+    padding: 10px;
+  }
