@@ -2,7 +2,7 @@ body {
   font-family: pretendard;
   height: 100vh; /* 화면 높이 만큼 설정 */
   background-image: url(assets/land.png);
-  background-size: 100% auto;
+  background-size: cover;
   background-color: #f1aed7;
   background-position: center top; 
             background-attachment: fixed; /* 이미지를 고정 */
@@ -24,12 +24,14 @@ header{
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
+
 input {
   border: none;
   border-bottom: solid #aaaaaa 1px;
   padding: 4px;
+  font-size: medium;
 }
 
 input::placeholder {
@@ -65,6 +67,7 @@ button{
     border: solid #aaaaaa 1px;
     border-radius: 8px;
     font-size: medium;
+    font-weight: 500;
     background-color: whitesmoke;
     margin: 10px;
 }
@@ -109,12 +112,19 @@ div.column{
     
 }
 
-#main-content{
+.center{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+#login-form{
+    margin-top: 260px;
+    background-color: rgba(255, 255, 255, 0.616);
+    border-radius: 200px;
+    padding: 20px;
+}
+
 #todoForm{
     font-size: large;
     font-weight: 600;

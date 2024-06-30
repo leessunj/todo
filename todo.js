@@ -31,11 +31,16 @@ loadTodos()
 loadDones()
 function loadTodos(){
     const loadTodo=JSON.parse(localStorage.getItem("todos"))
-    loadTodo.forEach(createTodo)
+    if(loadTodo){
+        loadTodo.forEach(createTodo)
+    }
 }
 function loadDones(){
     const loadDone=JSON.parse(localStorage.getItem("dones"))
-    loadDone.forEach(createDone)
+    if(loadDone){
+        loadDone.forEach(createDone)
+    }
+    
 }
 
 

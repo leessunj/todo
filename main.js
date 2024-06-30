@@ -23,9 +23,14 @@ loginBtn.addEventListener("submit",(e)=>{
 
 if(username){
     completeLogin()
+}else{
+    // loginBtn.classList.remove("hidden")
+    // mainContent.classList.add("hidden")
 }
 
 function completeLogin(){
+    console.log(loginBtn)
+    console.log(mainContent)
     loginBtn.classList.add("hidden")
     mainContent.classList.remove("hidden")
     userText.innerHTML=addParticleToName(username)
